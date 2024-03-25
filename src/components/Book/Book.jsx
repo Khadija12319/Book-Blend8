@@ -11,15 +11,17 @@ const Book = ({book}) => {
             </div>
             <ul className='flex gap-3'>
                 {
-                    tags.map((x) => <li key={bookId}>{x}</li>)
+                    tags.map((x) => <li key={bookId} className='text-[#23BE0A] text-lg font-medium px-4 py-2 background mt-6 font1'>{x}</li>)
                 }
             </ul>
-            <h2>{bookName}</h2>
-            <h3>By : {author}</h3>
-            <hr className='border-dashed'/>
-            <div className='flex justify-between'>
-                <p>{category}</p>
-                <p className='flex justify-center items-center gap-2'>{rating} <FaRegStar /></p>
+            <div className=''>
+            <h2 className='font2 text-[#131313] text-2xl font-bold py-4'>{bookName}</h2>
+            <h3 className='text-[#131313CC] text-lg font-medium'>By : {author}</h3>
+            <hr className='border-dashed my-5 font1'/>
+            </div>
+            <div className='flex justify-between text-[#131313CC]'>
+                <p className='text-lg font-medium'>{category}</p>
+                <p className='flex justify-center items-center gap-2 text-lg font-medium'>{rating} <FaRegStar /></p>
             </div>
         </div>
         </Link>
