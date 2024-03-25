@@ -1,0 +1,9 @@
+#sidebar a.active, #sidebar-lg a.active{
+    color: #23BE0A;
+    border: 1px solid #23BE0A;
+    border-radius: 8px;
+}
+ul a{
+    padding-top: 14px;
+    padding-bottom: 14px;
+}
