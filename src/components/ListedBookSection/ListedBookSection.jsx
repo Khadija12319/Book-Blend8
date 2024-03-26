@@ -3,7 +3,6 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import Dropdown from 'react-dropdown';
 import 'react-dropdown/style.css';
 import 'react-tabs/style/react-tabs.css';
-import PropTypes from 'prop-types';
 import '../../App.css'
 import {getStoredBookList,getStoredWishList} from '../../Utility/Localstorage'
 import BookCards from '../../assets/BookCards/BookCards';
@@ -20,15 +19,22 @@ const ListedBookSection = () => {
         .then(data => setBooks(data))
     },[]);
     const storedBooks=getStoredBookList();
-    // const storedWishList = getStoredWishList();
+    const storedWishList = getStoredWishList();
     const readBookList=[];
+    const storedWishBook= [];
     for (const id of storedBooks){
         const book= books.find(book => book.bookId === id);
         if(book){
             readBookList.push(book);
         }
     }
-    console.log(readBookList);
+
+    for (const id of storedWishList){
+        const book= books.find(book => book.bookId === id);
+        if(book){
+            storedWishBook.push(book);
+        }
+    }
 
     return (
         <div>
@@ -44,7 +50,7 @@ const ListedBookSection = () => {
                     </TabList>
 
                     <TabPanel>
-                    <div className='space-y-6 pt-6'>
+                    <div className='space-y-6 pt-6 mb-10'>
                         {
                           readBookList.map(book => (
                             <BookCards key={book.bookId} book={book}></BookCards>
@@ -53,7 +59,13 @@ const ListedBookSection = () => {
                     </div>
                     </TabPanel>
                     <TabPanel>
-                    <h2>Any content 2</h2>
+                    <div className='space-y-6 pt-6 mb-10'>
+                    {
+                          storedWishBook.map(book => (
+                            <BookCards key={book.bookId} book={book}></BookCards>
+                          ))
+                        } 
+                    </div>
                     </TabPanel>
                 </Tabs>
                 </div>
@@ -62,8 +74,5 @@ const ListedBookSection = () => {
     );
 };
 
-ListedBookSection.propTypes={
-
-}
 
 export default ListedBookSection;
