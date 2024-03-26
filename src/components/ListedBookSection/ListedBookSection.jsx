@@ -3,6 +3,7 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import Dropdown from 'react-dropdown';
 import 'react-dropdown/style.css';
 import 'react-tabs/style/react-tabs.css';
+import PropTypes from 'prop-types';
 import '../../App.css'
 import {getStoredBookList,getStoredWishList} from '../../Utility/Localstorage'
 import BookCards from '../../assets/BookCards/BookCards';
@@ -43,7 +44,7 @@ const ListedBookSection = () => {
                     </TabList>
 
                     <TabPanel>
-                    <div>
+                    <div className='space-y-6 pt-6'>
                         {
                           readBookList.map(book => (
                             <BookCards key={book.bookId} book={book}></BookCards>
@@ -60,5 +61,9 @@ const ListedBookSection = () => {
         </div>
     );
 };
+
+ListedBookSection.propTypes={
+
+}
 
 export default ListedBookSection;
