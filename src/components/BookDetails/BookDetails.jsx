@@ -26,8 +26,12 @@ const BookDetails = () => {
             setWish(true);
             saveWishList(idInt);
             toast.success("Book Added to Wishlist");
-        } else {
+        } 
+        else if(!booklist){
             toast.error("This book is already in your Wishlist!");
+        }
+        else {
+            toast.error("This book is already in your Readlish!");
         }
     
     };

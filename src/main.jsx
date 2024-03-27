@@ -10,12 +10,14 @@ import Home from './components/Home/Home';
 import ListedBooks from './components/ListedBooks/ListedBooks';
 import PagesToRead from './components/PagesToRead/PagesToRead';
 import BookDetails from './components/BookDetails/BookDetails.jsx';
+import NotFound from './components/NotFound/NotFound.jsx';
 
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App></App>,
+    errorElement:<NotFound></NotFound>,
     children:[
       {
         path:"/",

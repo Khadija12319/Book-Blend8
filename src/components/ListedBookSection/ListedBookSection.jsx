@@ -8,10 +8,8 @@ import {getStoredBookList,getStoredWishList} from '../../Utility/Localstorage'
 import BookCards from '../../assets/BookCards/BookCards';
 const ListedBookSection = () => {
     const [books, setBooks] =useState([]);
+    const [selectedSortOption, setSelectedSortOption] = useState(''); 
 
-    const options = [
-        'one', 'two', 'three'
-      ];
 
     useEffect( () => {
         fetch('../../../public/Books.json')
@@ -22,6 +20,7 @@ const ListedBookSection = () => {
     const storedWishList = getStoredWishList();
     const readBookList=[];
     const storedWishBook= [];
+
     for (const id of storedBooks){
         const book= books.find(book => book.bookId === id);
         if(book){
@@ -36,11 +35,27 @@ const ListedBookSection = () => {
         }
     }
 
+    const sortBooks = (books, option) => {
+        if (option === 'Rating') {
+            return books.sort((a, b) => b.rating - a.rating);
+        } else if (option === 'Publisher Year') {
+            return books.sort((a, b) => b.yearOfPublishing - a.yearOfPublishing);
+        } else if (option === 'Number of Pages') {
+            return books.sort((a, b) => b.totalPages - a.totalPages);
+        }
+        // Return the books array as is if no sorting option is selected
+        return books;
+    };
+
+    const sortedReadBooks = selectedSortOption ? sortBooks(readBookList, selectedSortOption) : readBookList;
+    const sortedWishlistBooks = selectedSortOption ? sortBooks(storedWishBook, selectedSortOption) : storedWishBook;
+    
+
     return (
         <div>
             <div>
                 <div className='container mx-auto flex items-center justify-center mt-[32px] mb-[56px]'>
-                <Dropdown options={options} placeholder="Sort By"  className='w-36'/>
+                <Dropdown onChange={(option) => setSelectedSortOption(option.value)} options={['Rating', 'Publisher Year', 'Number of Pages']} placeholder="Sort By"  className='w-40'/>
                 </div>
                 <div className='container mx-auto'>
                 <Tabs>
@@ -52,7 +67,7 @@ const ListedBookSection = () => {
                     <TabPanel>
                     <div className='space-y-6 pt-6 mb-10'>
                         {
-                          readBookList.map(book => (
+                          sortedReadBooks.map(book => (
                             <BookCards key={book.bookId} book={book}></BookCards>
                           ))
                         } 
@@ -61,7 +76,7 @@ const ListedBookSection = () => {
                     <TabPanel>
                     <div className='space-y-6 pt-6 mb-10'>
                     {
-                          storedWishBook.map(book => (
+                          sortedWishlistBooks.map(book => (
                             <BookCards key={book.bookId} book={book}></BookCards>
                           ))
                         } 
