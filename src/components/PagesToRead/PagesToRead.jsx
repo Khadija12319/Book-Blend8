@@ -1,4 +1,4 @@
-import {ResponsiveContainer, BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid } from 'recharts';
+import {ResponsiveContainer, BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid, Tooltip } from 'recharts';
 import {getStoredBookList} from '../../Utility/Localstorage'
 import { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
@@ -61,6 +61,7 @@ const PagesToRead = () => {
                 >
                     <CartesianGrid strokeDasharray="3 3" />
                     <XAxis dataKey="bookName" />
+                    <Tooltip/>
                     <YAxis tickCount={7}/>
                     <Bar dataKey='totalPages' fill="#8884d8" shape={<TriangleBar />} label={{ position: 'top' }}>
                         {updatedData.map((entry, index) => (

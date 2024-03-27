@@ -16,7 +16,7 @@ const FeaturedBooks = () => {
                         {
                             books.map((book) => (
                                 <div className="p-5 md:flex bg-green-50 rounded-2xl gap-6" key={book.bookId}>
-                                    <div className="rounded-2xl flex items-center md:mb-0 mb-4">
+                                    <div className="tooltip tooltip-accent rounded-2xl flex items-center md:mb-0 mb-4" data-tip={book.bookName}>
                                         <img src={book.image} alt="" className="w-[280px] h-auto rounded-2xl"/>
                                     </div>
                                     <div className="w-full">
