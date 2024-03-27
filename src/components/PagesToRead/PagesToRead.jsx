@@ -48,7 +48,7 @@ const PagesToRead = () => {
    
    
     return (
-        <div className='container mx-auto w-full flex justify-center'>
+        <div className='container mx-auto w-full flex justify-center bg-[#13131305] lg:p-20 rounded-3xl mb-20'>
             <ResponsiveContainer width="100%" height={700}>
                 <BarChart
                     data={updatedData}
