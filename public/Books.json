@@ -60,7 +60,7 @@
         "totalPages": 224,
         "rating": 4.4,
         "category": "Fiction",
-        "tags": ["ComingofAge", "Culture", "Literature"],
+        "tags": ["Coming of Age", "Culture", "Literature"],
         "publisher": "Little, Brown and Company",
         "yearOfPublishing": 1951
     },
@@ -112,7 +112,7 @@
         "totalPages": 197,
         "rating": 4.7,
         "category": "Fiction",
-        "tags": ["Philosophical", "Adventure", "Quest"],
+        "tags": ["Philosophical", "Adventure"],
         "publisher": "HarperCollins",
         "yearOfPublishing": 1988
     }        

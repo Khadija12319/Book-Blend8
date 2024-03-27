@@ -10,3 +10,6 @@
     background-color: #23BE0D0D;
     border-radius: 30px;
 }
+.custom-li {
+    min-width: max-content;
+  }
