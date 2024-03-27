@@ -14,18 +14,22 @@ const Header = () => {
                     <NavLink to="/"><a className="px-5 py-[14px]">Home</a></NavLink>
                     <NavLink to="/listed_books"><a className="px-5 py-[14px]">Listed Books</a></NavLink>
                     <NavLink to="/pages_to_read"><a className="px-5 py-[14px]">Pages to Read</a></NavLink>
+                    <NavLink to="/featuredbooks"><a className="px-5 py-[14px]">Featured Books</a></NavLink>
+                    <NavLink to="/bookblogs"><a className="px-5 py-[14px]">Blogs</a></NavLink>
                 </ul>
                 </div>
-                <a className="btn btn-ghost text-3xl font-bold font1">Book Vibe</a>
+                <a className="btn btn-ghost text-3xl font-bold font1">Book Blend</a>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1 gap-4" id="sidebar-lg">
-                <NavLink to="/"><a className="px-5 py-[14px] text-gray-900 font-normal text-lg font1">Home</a></NavLink>
-                <NavLink to="/listed_books"><a className="px-5 py-[14px] text-gray-900 font-normal text-lg font1">Listed Books</a></NavLink>
-                <NavLink to="/pages_to_read"><a className="px-5 required:py-[14px] text-gray-900 font-normal text-lg font1">Pages to Read</a></NavLink>
+                <NavLink to="/"><a className="px-3 py-[14px] text-gray-900 font-normal text-lg font1">Home</a></NavLink>
+                <NavLink to="/listed_books"><a className="px-3 py-[14px] text-gray-900 font-normal text-lg font1">Listed Books</a></NavLink>
+                <NavLink to="/pages_to_read"><a className="px-3 required:py-[14px] text-gray-900 font-normal text-lg font1">Pages to Read</a></NavLink>
+                <NavLink to="/featuredbooks"><a className="px-3 required:py-[14px] text-gray-900 font-normal text-lg font1">Featured Books</a></NavLink>
+                <NavLink to="/bookblogs"><a className="px-3 required:py-[14px] text-gray-900 font-normal text-lg font1">Blogs</a></NavLink>
                 </ul>
             </div>
-            <div className="lg:navbar-end gap-4 space-x-5 md:space-x-0">
+            <div className="lg:navbar-end gap-4 space-x-4 md:space-x-0">
                 <a className="btn btn-success px-[28px] border-none bg-[#23BE0A] text-white font-normal text-lg font1">Sign In</a>
                 <a className="btn btn-primary px-[28px] border-none bg-[#59C6D2] text-white font-normal text-lg font1">Sign Up</a>
             </div>

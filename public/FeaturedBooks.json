@@ -1,0 +1,80 @@
+[
+    {
+        "bookId": 1,
+        "bookName": "The Great Divide",
+        "author": "Cristina Henriquez",
+        "image": "https://i.postimg.cc/8PHtnnDx/9780063291324.webp",
+        "totalPages": 321,
+        "rating":3.8,
+        "category": "Historical Fiction",
+        "yearOfPublishing":"March 5, 2024",
+        "shortDescription": "An exploration of the construction of the Panama Canal and the challenges faced by the individuals residing in its vicinity and participating in its building process."
+
+    },
+    {
+        "bookId": 2,
+        "bookName": "The Hunter",
+        "author": "Tana French",
+        "image": "https://i.postimg.cc/bNFfcYjj/hunter.jpg",
+        "totalPages": 480,
+        "rating": 4.3,
+        "category": "Mystery & Fiction",
+        "yearOfPublishing": "March 5, 2024",
+        "shortDescription": "Sequel to *The Searcher*, this book follows former detective Cal Hooper's struggle to protect everything he's built in Ireland when his long-lost father appears searching for gold."
+    },
+    {
+        "bookId": 3,
+        "bookName": "First Lie Wins",
+        "author": "Ashley Elston",
+        "image": "https://i.postimg.cc/HLTNrj5K/164444179.jpg",
+        "totalPages": 340,
+        "rating": 4.1,
+        "category": "Fiction & Thriller",
+        "yearOfPublishing": "January 2, 2024",
+        "shortDescription": "A newlywed couple investigates a series of murders along a deserted stretch of road after picking up an injured hitchhiker who dies."
+    },
+    {
+        "bookId": 4,
+        "bookName": "Anita de Monte Laughs Last",
+        "author": "Xochitl Gonzalez",
+        "image": "https://i.postimg.cc/4dLjkZY0/127306192.jpg",
+        "totalPages": 342,
+        "rating": 4.1,
+        "category": "Historical Fiction",
+        "yearOfPublishing": "March 5, 2024",
+        "shortDescription": "A Latina art student at an Ivy League school discovers the work of a female artist who was mysteriously murdered a decade earlier."
+    },
+    {
+        "bookId": 5,
+        "bookName": "Murder Road",
+        "author": "Simone St. James",
+        "image": "https://i.postimg.cc/Bbbp30xj/road.jpg",
+        "totalPages": 341,
+        "rating": 4.2,
+        "category": "Mystery & Thriller",
+        "yearOfPublishing": "March 5, 2024",
+        "shortDescription": "A newlywed couple investigates a series of murders along a deserted stretch of road after picking up an injured hitchhiker who dies."
+    },
+    {
+        "bookId": 6,
+        "bookName": "Listen for the Lie",
+        "author": "Amy Tintera",
+        "image": "https://i.postimg.cc/rwX3Lfpq/127279000.jpg",
+        "totalPages": 352,
+        "rating": 4.4,
+        "category": "Mystery & Thriller",
+        "yearOfPublishing": "March 5, 2024",
+        "shortDescription": "When a popular true crime podcaster wants to cover her best friend's murder, a woman must help him even though she knows she might be guilty."
+    },
+    {
+        "bookId": 7,
+        "bookName": "Only if you're lucky",
+        "author": "Stacy Willingham",
+        "image": "https://i.postimg.cc/mZnKmLfz/60891867.jpg",
+        "totalPages": 384,
+        "rating": 4.1,
+        "category": "Mystery & Thriller",
+        "yearOfPublishing": "March 5, 2024",
+        "shortDescription": "When a popular true crime podcaster wants to cover her best friend's murder, a woman must help him even though she knows she might be guilty."
+    }
+]

@@ -12,4 +12,10 @@
 }
 .custom-li {
     min-width: max-content;
-  }
+}
+.container1 {
+    background-image: url('../public/bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
