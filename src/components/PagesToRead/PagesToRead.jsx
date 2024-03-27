@@ -75,6 +75,11 @@ const PagesToRead = () => {
 
 
 PagesToRead.propTypes ={
-    props: PropTypes.object
+    props: PropTypes.object,
+    height:PropTypes.number,
+    width:PropTypes.number,
+    fill: PropTypes.string,
+    x: PropTypes.number.isRequired,
+    y: PropTypes.number.isRequired
 }
 export default PagesToRead;
