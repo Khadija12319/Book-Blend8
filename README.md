@@ -7,7 +7,7 @@ Welcome to Book Blend, your ultimate destination for literary exploration and di
 
 ## Live Website Link 
 
-https://bookvibereview.netlify.app/
+https://bookblendreview.netlify.app/
 
 
 ## Key features of my website
