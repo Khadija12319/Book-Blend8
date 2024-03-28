@@ -12,7 +12,7 @@ const ListedBookSection = () => {
 
 
     useEffect( () => {
-        fetch('../../../public/Books.json')
+        fetch('./Books.json')
         .then(res => res.json())
         .then(data => setBooks(data))
     },[]);
