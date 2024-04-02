@@ -2,11 +2,15 @@ import { useLoaderData } from "react-router-dom";
 import "../../App.css"
 import { GrUserManager } from "react-icons/gr";
 import { MdContactPage } from "react-icons/md";
+import { Helmet } from "react-helmet-async";
 const FeaturedBooks = () => {
     const books =useLoaderData();
 
     return (
         <div>
+            <Helmet>
+                <title>Book Blend | Featured Books</title>
+            </Helmet>
             <div>
                 <div className="container mx-auto bg-emerald-100 rounded-3xl mb-20">
                     <h3 className="text-4xl font-bold py-20 text-center font1">Featured Books Here</h3>

@@ -2,6 +2,7 @@ import {ResponsiveContainer, BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid, T
 import {getStoredBookList} from '../../Utility/Localstorage'
 import { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
+import { Helmet } from 'react-helmet-async';
 // import { data } from 'autoprefixer';
 const PagesToRead = () => {
     const getStoredBooks= getStoredBookList();
@@ -49,6 +50,9 @@ const PagesToRead = () => {
    
     return (
         <div className='container mx-auto w-full flex justify-center bg-[#13131305] lg:p-20 rounded-3xl mb-20'>
+            <Helmet>
+                <title>Book Blend | Pages to Read</title>
+            </Helmet>
             <ResponsiveContainer width="100%" height={700}>
                 <BarChart
                     data={updatedData}

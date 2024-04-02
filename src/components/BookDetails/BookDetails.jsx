@@ -4,6 +4,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import {saveBookList,saveWishList,removeFromWishList} from "../../Utility/Localstorage"
 import { useState } from "react";
 import '../../App.css';
+import { Helmet } from "react-helmet-async";
 
 const BookDetails = () => {
     const [booklist, setBookList] = useState(false);
@@ -45,6 +46,9 @@ const BookDetails = () => {
 
     return (
         <div className="container mx-auto flex lg:flex-row flex-col gap-12 mb-[160px]"> 
+            <Helmet>
+                <title>Book Blend | Book Details</title>
+            </Helmet>
             <div className="bg-[#1313130D] flex-1 rounded-2xl">  
                 <img src={book.image} alt="" className="w-full md:p-[74px] p-[30px]"/>
             </div>

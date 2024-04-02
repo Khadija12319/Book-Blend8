@@ -1,8 +1,12 @@
+import { Helmet } from "react-helmet-async";
 import "../../App.css"
 import { GrUserManager } from "react-icons/gr";
 const BookBlogs = () => {
     return (
         <div className="container mx-auto rounded-2xl mb-10">
+            <Helmet>
+                <title>Book Blend | Blogs</title>
+            </Helmet>
             <div className="container1 h-fit rounded-2xl">
                 <div className="bg-gray-100 bg-opacity-10">
                     <h1 className="font2 text-3xl font-semibold py-8 text-center">Title: Lost in the Pages: A Journey Through the Enchanted Realm of {"'The Secret Garden'"}</h1>
